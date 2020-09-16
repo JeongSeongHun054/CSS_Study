@@ -1,0 +1,24 @@
+.father {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+
+.child:nth-child(2) {
+  /* 자식들의 요소 하나만 변경하는 것 */
+  align-self: center;
+  /* html을 변경시키고 그에 따라 css도 같이 움직임 */
+  order: 1;
+}
+
+.child:nth-child(3) {
+  align-self: flex-end;
+  order: -1;
+}

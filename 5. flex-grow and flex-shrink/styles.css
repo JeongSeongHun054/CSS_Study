@@ -1,0 +1,31 @@
+/* flex-shrink와 flex-grow는 반응형 디자인에 유용하다! */
+
+.father {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.child {
+  width: 300px;
+  height: 200px;
+  background-color: aqua;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child:nth-child(2) {
+  background-color: #000;
+
+  /* box가 축소될 때 2배 더 많이 축소 */
+  flex-shrink: 2;
+}
+
+.child:nth-child(3) {
+  /* 남아있는 모든 공간을 채우고 그 공간만큼 더 커짐 */
+  flex-grow: 1;
+}

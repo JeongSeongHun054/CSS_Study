@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* align-items로 수직 정렬을 할때는 높이를 꼭 정해줘야 한다!!! */
+  /* 단 stretch 속성은 높이 설정이 없어야 함 */
+  height: 200vh;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
