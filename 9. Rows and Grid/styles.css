@@ -1,0 +1,33 @@
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+}
+
+.header {
+  background-color: #2ecc71;
+  grid-column-start: 1;
+  /* 부모에서 column의 수를 4개밖에 설정하지 않았어도 end에서 부모 이상으로 column의 수를 늘린다면 그에 맞게 늘어남 */
+  grid-column-end: 5;
+}
+
+.content {
+  background-color: #3498db;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.nav {
+  background-color: blueviolet;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.footer {
+  background-color: coral;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}

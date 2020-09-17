@@ -1,5 +1,3 @@
-/* flex-shrink와 flex-grow는 반응형 디자인에 유용하다! */
-
 .father {
   display: flex;
   justify-content: space-around;
